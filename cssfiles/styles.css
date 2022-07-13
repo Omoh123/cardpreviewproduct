@@ -45,7 +45,7 @@ img{
 /**END OF IMAGE**/
 
   /***TEXT**/
-p:first-child{
+h1{
     font-size:1.4rem;
     color:hsl(228, 12%, 48%);
     letter-spacing: 0.4rem;
@@ -53,19 +53,19 @@ p:first-child{
     font-weight: 500;
 }
 
-p:nth-of-type(2){
+p:nth-of-type(1){
     font-size: 2.5rem;
     color:hsl(212, 21%, 14%);
     font-family: 'Montserrat';
     font-weight: 700;
 }
 
-p:nth-of-type(3){
+p:nth-of-type(2){
     font-size: 1rem;
     color:hsl(228, 12%, 48%);
 }
 
-p:nth-child(4){
+p:nth-of-type(3){
     font-size: 2.5rem;
     color:hsl(158, 36%, 37%);
 }
