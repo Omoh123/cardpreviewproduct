@@ -1,0 +1,161 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100&family=Montserrat:wght@100&display=swap');*/
+
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body{
+    margin:0px;
+    padding:0px;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container{
+    height:100rem;
+    margin:100px auto;
+}
+
+.container > div{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    
+    
+}
+
+.image-text{
+    margin:0 auto;
+    width:48vw;
+    min-width: auto;
+    border-radius: 8px;
+    height:auto;
+    /*max-height:auto;*/
+    background-color: hsl(0, 0%, 100%);
+}
+
+/**IMAGE**/
+img{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    height:464px; 
+    width:275px;
+}
+
+/**END OF IMAGE**/
+
+  /***TEXT**/
+p:first-child{
+    font-size:1.4rem;
+    color:hsl(228, 12%, 48%);
+    letter-spacing: 0.4rem;
+    font-family:'Montserrat';
+    font-weight: 500;
+}
+
+p:nth-of-type(2){
+    font-size: 2.5rem;
+    color:hsl(212, 21%, 14%);
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+p:nth-of-type(3){
+    font-size: 1rem;
+    color:hsl(228, 12%, 48%);
+}
+
+p:nth-child(4){
+    font-size: 2.5rem;
+    color:hsl(158, 36%, 37%);
+}
+
+span{
+    font-size: 0.8rem;
+    text-decoration: line-through;
+    color:hsl(228, 12%, 48%);
+    vertical-align: middle;
+}
+
+.container .attribution{
+    display:block;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-top:1.5rem; 
+}
+    
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/**END OF TEXT**/
+
+
+    /*~~BUTTON~~*/
+button{
+    font-size:0.9rem;
+    padding:10px;
+    color: hsl(30, 38%, 92%);
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 5px;
+    font-weight:700;
+    width:10rem;
+}
+
+button:hover, button:focus{
+    background-color: hsl(212, 21%, 14%);
+}
+
+.fa-shopping-cart{
+    color: hsl(0, 0%, 100%);
+    padding:5px;
+}
+
+       /*~~MEDIA QUERIES~~*/
+@media(min-width:766px),(max-width:1060px) {
+    img{
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        height:500px; 
+        width:25vw;
+    }
+    
+    .image-text{
+        margin:0 auto;
+        width:60vw;
+        min-width: auto;
+        border-radius: 8px;
+        height:auto;
+        /*max-height:auto;*/
+        background-color: hsl(0, 0%, 100%);
+    }
+    
+}
+
+@media(max-width:765px){
+    .container > div{
+        display:block;
+    }
+    .image-text{
+        margin:0 auto;
+        width:55vw;
+        border-radius: 8px;
+        height:auto;
+        min-width:auto;
+        padding:10px;
+        background-color: hsl(0, 0%, 100%);
+    }
+
+    img{
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        height:300px; 
+        width:55vw;
+    }
+
+    button{
+        width:50vw;
+    }
+}
